@@ -1,116 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ortega-Validar formulario</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <div class="container" id="container">
-      <div class="form-container register-container">
-        <form>
-          <h1>Regístrate aquí</h1>
-          <div class="form-control">
-            <input type="text" id="username" placeholder="Nombre" />
-            <small id="username-error"></small>
-            <span></span>
-          </div>
-          <div class="form-control">
-            <input type="email" id="email" placeholder="Correo electrónico" />
-            <small id="email-error"></small>
-            <span></span>
-          </div>
-          <div class="form-control">
-            <input type="password" id="password" placeholder="Contraseña" />
-            <small id="password-error"></small>
-            <span></span>
-          </div>
-          <button type="submit" value="submit">Registrar</button>
-          <span>o usa tu cuenta</span>
-          <div class="social-container">
-            <a href="#" class="social"
-              ><i class="fa-brands fa-facebook-f"></i
-            ></a>
-            <a href="#" class="social"><i class="fa-brands fa-google"></i></a>
-            <a href="#" class="social"><i class="fa-brands fa-tiktok"></i></a>
-          </div>
-        </form>
-      </div>
-
-      <div class="form-container login-container">
-        <form class="form-lg">
-          <h1>Inicia sesión aquí</h1>
-          <div class="form-control2">
-            <input type="email" class="email-2" placeholder="Correo electrónico" />
-            <small class="email-error-2"></small>
-            <span></span>
-          </div>
-          <div class="form-control2">
-            <input type="password" class="password-2" placeholder="Contraseña" />
-            <small class="password-error-2"></small>
-            <span></span>
-          </div>
-
-          <div class="content">
-            <div class="checkbox">
-              <input type="checkbox" name="checkbox" id="checkbox" />
-              <label for="">Recuérdame</label>
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar sesión y registrarse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h2 class="logo">Ortega web</h2>
+    <nav class="navigation">
+        <a href="#">Inicio</a>
+        <a href="#">Acerca de</a>
+        <a href="#">Servicios</a>
+        <a href="#">Contacto</a>
+        <button class="bthLogin-popup">Iniciar sesión</button>
+    </nav>
+</header>
+<div class="wrapper">
+    <span class="icon-close">
+        <ion-icon name="close"></ion-icon>
+    </span>
+    <div class="form-box login">
+        <h2>Iniciar sesión</h2>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="mail"></ion-icon>
+                </span>
+                <input type="email" required>
+                <label>Correo electrónico</label>
             </div>
-            <div class="pass-link">
-              <a href="#">¿Olvidaste la contraseña?</a>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="lock-closed"></ion-icon>
+                </span>
+                <input type="password" required>
+                <label>Contraseña</label>
             </div>
-          </div>
-          <button type="submit" value="submit">Iniciar sesión</button>
-          <span>O usa tu cuenta</span>
-          <div class="social-container">
-            <a href="#" class="social"
-              ><i class="fa-brands fa-facebook-f"></i
-            ></a>
-            <a href="#" class "social"><i class="fa-brands fa-google"></i></a>
-            <a href="#" class="social"><i class="fa-brands fa-tiktok"></i></a>
-          </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox" required>
+                    Recordarme</label>
+                <a href="#">¿Olvidaste la contraseña?</a>
+            </div>
+            <button type="submit" class="bth">Iniciar sesión</button>
+            <div class="login-register">
+                <p>¿No tienes una cuenta? <a href="#" class="register-link">Registrarse</a></p>
+            </div>
         </form>
-      </div>
-
-      <div class="overlay-container">
-        <div class="overlay">
-          <div class="overlay-panel overlay-left">
-            <h1 class="title">
-              Hola <br />
-              amigos
-            </h1>
-            <p>Si tienes una cuenta, inicia sesión aquí y diviértete</p>
-            <button class="ghost" id="login">
-              Iniciar sesión
-              <i class="fa-solid fa-arrow-left"></i>
-            </button>
-          </div>
-
-          <div class="overlay-panel overlay-right">
-            <h1 class="title">
-              Comienza tu <br />
-              viaje ahora
-            </h1>
-            <p>
-              Si aún no tienes una cuenta, únete a nosotros y comienza tu viaje
-            </p>
-            <button class="ghost" id="register">
-              Registrarse
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-        </div>
-      </div>
     </div>
-  </body>
-  <script src="main.js"></script>
+
+    <div class="form-box register">
+        <h2>Registro</h2>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="person"></ion-icon>
+                </span>
+                <input type="text" required>
+                <label>Nombre de usuario</label>
+            </div>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="mail"></ion-icon>
+                </span>
+                <input type="email" required>
+                <label>Correo electrónico</label>
+            </div>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="lock-closed"></ion-icon>
+                </span>
+                <input type="password" required>
+                <label>Contraseña</label>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox" required>
+                    Acepto los términos y condiciones</label>
+            </div>
+            <button type="submit" class="bth">Registrarse</button>
+            <div class="login-register">
+                <p>¿Ya tienes una cuenta? <a href="#" class="login-link">Iniciar sesión</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
 </html>
