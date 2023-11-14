@@ -1,0 +1,73 @@
+#banner{
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+
+}
+#banner img{
+    width: 100%;
+    height:100%;
+
+}
+#banner .contenedor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color:#fdfdfd;
+    transform: translateX(-50%);
+}
+/*TAMAÑO DE LETRA TITULO*/
+#banner h2{
+    font-size: 100px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+#banner a:hover{
+    background-color: rgb(59, 62, 84);
+    }
+
+    .slider-frame {
+        width: 100%;
+        height: auto;
+        margin: 20px auto 0;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .slider-frame li {
+        list-style: none;
+        width: 45%;
+        height: 600px; /* Establece la altura deseada para las imágenes */
+    }
+    
+    .slider-frame img {
+        width: 200%;
+        height: 200%;
+        object-fit:cover; /* Ajusta el tamaño de la imagen para cubrir completamente el contenedor */
+    }
+    
+    
+    
+    
+    .slider-frame ul {
+        display: flex;
+        padding: 0;
+        width: 300%;
+        animation:slide 25s infinite linear;
+    }
+    
+    @keyframes slide {
+        0% { margin-left:0; }
+        20% { margin-left: 0; }
+
+        25% { margin-left: -100%; }
+        45% { margin-left: -100%; }
+
+        50% { margin-left: -200%; }
+        70% { margin-left: -200%; }
+
+        
+    }
+    
+    
+    

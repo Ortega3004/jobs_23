@@ -1,0 +1,110 @@
+body{
+    margin-top: 100px;
+}
+.titu{
+    text-align: center;
+    color:rgb(255, 255, 255);
+    margin: 3%;
+    font-size: 200%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: linear-gradient(to right, rgb(36, 64, 249), rgb(109, 211, 6));
+    transform: perspective(1000px) rotateX(30deg);
+}
+
+img{
+display: block;
+width: 100%;
+max-width: 100%;
+}
+.contenedor-flexible{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*diseño responsivo*/
+@media screen and (min-width:820px){
+    .column--50-25{
+    width: 24.5%;
+}
+}
+/*efectos a las imagenes de galeria*/
+.galeria__img{
+    object-fit: cover;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+/*zoom al posicionarse en una imagen*/
+.galeria__img:hover {
+    transform: scale(1.05);
+}
+
+.galeria__img--grande{
+    height: 400px;
+}
+
+.galeria__img--chica{
+    height: 200px;
+}
+
+/*img selccionada --> img grande*/
+.modal{
+width: 100%;
+min-height: 100vh;
+background-color: rgb(109, 211, 6);
+position: fixed;
+top: 0;
+left: 0;
+z-index: 10000;
+display: none;
+}
+
+/*centramos la imagen*/
+.modal__contenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/*ancho de la img grande*/
+.modal_img{
+    width: 50%;
+}
+
+/*estilo de el boton*/
+.modal_boton{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+    color: aliceblue;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    background: rgb(59, 81, 222);
+    font-size: 2.5em;
+    text-align: center;
+    border-radius: 50%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*java script, permite abrir la imagen*/
+.modal--open{
+    display: block;
+}
+
+.modal_texto{
+    font-size:150%;
+    color: rgb(253, 253, 253);
+    text-align:justify;
+    padding:5%;
+    font-family:cursive;
+    text-shadow: 2px 2px 4px #000; 
+ 
+    
+
+}

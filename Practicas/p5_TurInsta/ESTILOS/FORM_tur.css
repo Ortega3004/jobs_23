@@ -1,0 +1,84 @@
+.formulario {
+    background-color: rgb(0, 84, 193);
+    align-items: center;
+    height: 100vh;
+
+}
+
+.title {
+    margin: 3%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase
+    
+}
+
+main {
+    margin-top: 80px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-block-end: 50px;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    text-align: center;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+.campo {
+    margin-bottom: 1rem;
+}
+
+.campo label {
+    color: rgb(255, 255, 255);
+    font-weight: .5rem;
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.campo textarea {
+    height: 15rem;
+}
+
+.input-type {
+    width: 100%;
+    border: none;
+    padding: .5rem;
+    border-radius: .4rem;
+    height: 2rem;
+}
+
+.boton {
+    background-color: rgb(102, 204, 0);
+    color: rgb(255, 255, 255);
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-radius: .3rem;
+    width: 100%;
+    text-align: center;
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+.sexo{
+    color:rgb(255, 255, 255) ;
+    height: 1rem;
+    font-size: 1.1em;
+}
+.tipo_sexo{
+    color: rgb(255,255,255);
+    padding: .2em;
+}

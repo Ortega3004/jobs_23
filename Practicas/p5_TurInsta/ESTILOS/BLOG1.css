@@ -1,0 +1,22 @@
+#blog .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;  
+}
+#blog img{
+    width: 100%;
+    max-width: 280px;
+    padding:20px;
+    border-radius: 10% / 50%;
+
+}
+*/*margena a articulo*/
+#blog.article{
+    margin: 15px;
+}
+#blog h3,h4{
+    text-align: center;
+}
+#bienvenidos{
+    text-align: center;
+}

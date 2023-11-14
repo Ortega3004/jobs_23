@@ -1,0 +1,31 @@
+/*color de fondo y letra*/
+#info {
+    background-color: rgb(85, 171, 0);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+#info .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info-tezo img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50px 0;
+    border: 7px solid #fff;
+    margin: 20px;
+}
+
+#info h2 {
+    margin: 20px 60px 20px 20px;
+}
+.welcome{
+    font-size:200%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 1%;
+    color: rgb(0, 110, 255);
+    transform: perspective(1000px) rotateX(30deg);
+}
